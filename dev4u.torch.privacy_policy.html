@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Privacy Policy for Dev4U Torch — the flashlight app. We do not collect, store, or share any personal information." />
+<title>Dev4U Torch — Privacy Policy</title>
+<style>
+  :root{
+    --bg:#0f172a;
+    --bg-card:#1e293b;
+    --bg-soft:#111c30;
+    --text:#e2e8f0;
+    --muted:#94a3b8;
+    --accent:#38bdf8;
+    --accent2:#fbbf24;
+    --border:#334155;
+    --good:#4ade80;
+    --bad:#f87171;
+    --radius:14px;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:radial-gradient(1200px 500px at 15% -10%,#1d3a5f 0%,transparent 60%),
+               radial-gradient(1000px 500px at 110% 0%,#3b2f12 0%,transparent 55%),var(--bg);
+    color:var(--text);
+    line-height:1.7;
+    min-height:100vh;
+    padding-bottom:40px;
+  }
+  .wrap{max-width:900px;margin:0 auto;padding:0 20px}
+  header.hero{
+    padding:56px 0 34px;
+    border-bottom:1px solid var(--border);
+    margin-bottom:10px;
+    background:linear-gradient(180deg,rgba(56,189,248,.10),transparent);
+  }
+  .brand{display:flex;align-items:center;gap:14px}
+  .logo{
+    width:56px;height:56px;border-radius:16px;flex:0 0 auto;
+    background:linear-gradient(135deg,#f59e0b,#fbbf24 55%,#fde68a);
+    box-shadow:0 8px 22px rgba(251,191,36,.35),inset 0 -4px 8px rgba(0,0,0,.25);
+    display:grid;place-items:center;color:#78350f;font-size:26px;
+  }
+  h1{font-size:clamp(1.5rem,3.4vw,2.15rem);letter-spacing:-.02em;line-height:1.2}
+  .sub{color:var(--muted);margin-top:6px;font-size:.98rem}
+  .meta{
+    display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;
+  }
+  .chip{
+    background:var(--bg-card);border:1px solid var(--border);
+    border-radius:999px;padding:4px 12px;font-size:.8rem;color:var(--muted);
+  }
+  .chip b{color:var(--text);font-weight:600}
+  .badge-ok{background:rgba(74,222,128,.12);border-color:rgba(74,222,128,.35);color:var(--good)}
+  nav.toc{
+    position:sticky;top:12px;z-index:10;
+    background:rgba(15,23,42,.85);backdrop-filter:blur(8px);
+    border:1px solid var(--border);border-radius:var(--radius);
+    padding:12px 16px;margin:22px 0;
+  }
+  nav.toc summary{list-style:none;cursor:pointer;font-weight:600;color:var(--accent)}
+  nav.toc summary::-webkit-details-marker{display:none}
+  nav.toc ol{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:10px;font-size:.88rem}
+  nav.toc a{color:var(--muted);text-decoration:none}
+  nav.toc a:hover{color:var(--accent);text-decoration:underline}
+  section{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:26px 28px;margin:22px 0;scroll-margin-top:80px}
+  h2{font-size:1.25rem;margin-bottom:6px;color:var(--accent2);letter-spacing:-.01em}
+  h3{font-size:1.02rem;margin:18px 0 6px;color:var(--accent)}
+  p{margin:10px 0}
+  ul{margin:10px 0 10px 22px}
+  li{margin:6px 0}
+  .hl{background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.3);border-radius:10px;padding:12px 16px;margin:14px 0}
+  .hl b{color:var(--accent)}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.92rem}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+  th{background:rgba(56,189,248,.08);color:var(--accent);font-weight:600}
+  tr:last-child td{border-bottom:none}
+  td.per{font-weight:600;color:var(--text);white-space:nowrap}
+  .tag{display:inline-block;padding:1px 9px;border-radius:999px;font-size:.72rem;font-weight:700;
+    letter-spacing:.02em}
+  .tag.android{background:#22c55e;color:#052e16}
+  .tag.ios{background:#a3a3a3;color:#171717}
+  .contact a{color:var(--accent)}
+  footer{border-top:1px solid var(--border);margin-top:34px;padding-top:18px;
+    color:var(--muted);font-size:.86rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+  .btn-top{
+    position:fixed;right:18px;bottom:18px;z-index:20;
+    width:44px;height:44px;border-radius:12px;border:1px solid var(--border);
+    background:var(--bg-card);color:var(--accent);cursor:pointer;font-size:18px;
+    box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .25s;
+  }
+  .btn-top.show{opacity:1;pointer-events:auto}
+  @media(max-width:640px){
+    section{padding:20px 18px}
+    th,td{padding:9px 8px}
+    td.per{white-space:normal}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">🔦</div>
+      <div>
+        <h1>Dev4U Torch — Privacy Policy</h1>
+        <div class="sub">Flashlight app for Android &amp; iOS · Built by Dev4U</div>
+      </div>
+    </div>
+    <div class="meta">
+      <span class="chip"><b>Effective date:</b> 2026-09-06</span>
+      <span class="chip"><b>Version:</b> 1.0.0</span>
+      <span class="chip badge-ok"><b>Personal data collected:</b> NONE</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="toc">
+    <details>
+      <summary>📑 Table of contents</summary>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#collect">Information we collect</a></li>
+        <li><a href="#camera">Camera &amp; flashlight</a></li>
+        <li><a href="#permissions">Permissions we use</a></li>
+        <li><a href="#local">Data stored on your device</a></li>
+        <li><a href="#thirdparty">Third-party services</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </details>
+  </nav>
+
+  <section id="overview">
+    <h2>1. Overview</h2>
+    <p>
+      <b>Dev4U Torch</b> (the “<b>App</b>”) is a flashlight application. Its main
+      function is to turn your device's <b>camera flash (LED)</b> into a bright
+      flashlight, to use your <b>screen as a light</b> with adjustable brightness,
+      and to provide <b>Strobe, SOS and Morse code</b> blinking patterns and a
+      home-screen <b>widget</b>.
+    </p>
+    <p>
+      This policy explains what information the App accesses and why. In short:
+    </p>
+    <div class="hl">
+      <b>We do not collect, store, transmit, or sell any personal information.</b>
+      The App has <b>no account system, no ads, no analytics, no trackers, and no
+      Internet access</b>. Everything stays on your device.
+    </div>
+  </section>
+
+  <section id="collect">
+    <h2>2. Information we collect</h2>
+    <p>We do <b>not</b> collect any of the following:</p>
+    <ul>
+      <li>Personal identifiers (name, email, phone number, ID, …)</li>
+      <li>Location data</li>
+      <li>Contacts, calendar, messages, or call history</li>
+      <li>Photos, videos, audio, or files on your device</li>
+      <li>Device identifiers, usage statistics, or diagnostics</li>
+    </ul>
+    <p>
+      Because the App does not request Internet permission (Android) and makes no
+      network connections (iOS), there is no mechanism for any data — personal or
+      otherwise — to leave your device.
+    </p>
+  </section>
+
+  <section id="camera">
+    <h2>3. Camera &amp; flashlight</h2>
+    <p>
+      The App uses the <b>camera only as a source of light</b>. When you switch on
+      the flashlight, the App turns on the <b>camera flash/LED</b>. Specifically:
+    </p>
+    <ul>
+      <li>The camera sensor is <b>never opened</b> to take or record a picture or video.</li>
+      <li>No image, frame, or pixel data is ever read, stored, or transmitted.</li>
+      <li>
+        <b>Android:</b> the App toggles the LED through the system
+        <code>CameraManager</code> API and therefore requests <b>no camera
+        permission</b> at all.
+      </li>
+      <li>
+        <b>iOS:</b> the App toggles the built-in flashlight (<code>AVCaptureDevice</code>).
+        iOS may show the standard camera-access notice because the flash belongs to the
+        camera hardware — this access is used <b>only</b> to power the flashlight.
+      </li>
+    </ul>
+    <p>
+      In short: we access the <b>camera flash</b> to give you light, and nothing more.
+    </p>
+  </section>
+
+  <section id="permissions">
+    <h2>4. Permissions we use</h2>
+    <p>Below are the permissions the App can request, and why each one is used.</p>
+
+    <table>
+      <thead>
+        <tr><th>Platform</th><th>Permission</th><th>Why we use it</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="tag android">Android</span><br/><span class="tag ios">iOS</span></td>
+          <td class="per">Camera / Camera flash</td>
+          <td>To power the <b>flashlight (LED flash)</b>. Never used to capture or record anything.</td>
+        </tr>
+        <tr>
+          <td><span class="tag android">Android</span></td>
+          <td class="per">Notifications<br/><small>(POST_NOTIFICATIONS)</small></td>
+          <td>To show a <b>notification</b> while the flashlight is on, so you can see its status and turn it off quickly.</td>
+        </tr>
+        <tr>
+          <td><span class="tag android">Android</span></td>
+          <td class="per">Foreground service<br/><small>(FOREGROUND_SERVICE)</small></td>
+          <td>To keep the flashlight working and updating its notification when the App is <b>in the background</b> or the screen is off.</td>
+        </tr>
+        <tr>
+          <td><span class="tag android">Android</span></td>
+          <td class="per">Wake lock<br/><small>(WAKE_LOCK)</small></td>
+          <td>To keep the <b>screen awake</b> while using strobe/SOS/Morse or the screen-light feature, so the light is not interrupted.</td>
+        </tr>
+        <tr>
+          <td><span class="tag android">Android</span></td>
+          <td class="per">Home-screen widget</td>
+          <td>To add a <b>widget</b> with a single on/off button. No data is shared with the widget.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Permissions are requested <b>only when needed</b> for the function you are using,
+      and are never used for data collection. If you deny them, the related feature
+      simply will not work (for example, notifications cannot be shown).
+    </p>
+  </section>
+
+  <section id="local">
+    <h2>5. Data stored on your device</h2>
+    <p>
+      The App stores a small amount of <b>settings</b> locally on your device so your
+      preferences are remembered:
+    </p>
+    <ul>
+      <li>Your selected <b>language</b>;</li>
+      <li>Your <b>screen-light</b> settings and preferred brightness;</li>
+      <li>Any <b>Morse code presets</b> you create or edit.</li>
+    </ul>
+    <p>
+      This information is kept in the App's own private storage on your device only.
+      It is <b>never</b> uploaded, synced, or shared. Uninstalling the App (or clearing
+      its data) removes it permanently.
+    </p>
+  </section>
+
+  <section id="thirdparty">
+    <h2>6. Third-party services, ads &amp; analytics</h2>
+    <ul>
+      <li><b>No advertising</b> — there are no ads or ad SDKs.</li>
+      <li><b>No analytics</b> — we do not use crash reporters or analytics SDKs.</li>
+      <li><b>No trackers</b> — the App contains no tracking or fingerprinting code.</li>
+      <li><b>No third-party data</b> — nothing is sent to any third party.</li>
+    </ul>
+  </section>
+
+  <section id="security">
+    <h2>7. Security</h2>
+    <p>
+      Since the App transmits no data and holds only local settings, there is nothing
+      to intercept over a network. Local preferences are protected by the operating
+      system's standard app-sandboxing.
+    </p>
+  </section>
+
+  <section id="children">
+    <h2>8. Children's privacy</h2>
+    <p>
+      The App is safe for all ages. It does not collect personal information from
+      anyone, including children under 13 (or the applicable age in your region).
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2>9. Changes to this policy</h2>
+    <p>
+      If we change how the App handles data, we will update this page and revise the
+      “Effective date” at the top. Material changes will be reflected here before they
+      take effect.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>10. Contact us</h2>
+    <p>
+      The App is developed by <b>Dev4U</b>. If you have any questions about this
+      Privacy Policy or the App, you can reach us by opening an issue on the policy
+      repository:
+    </p>
+    <p class="contact">
+      🔗 <a href="https://github.com/nvtuan1689/privacy-policy/issues" target="_blank" rel="noopener">github.com/nvtuan1689/privacy-policy/issues</a>
+    </p>
+  </section>
+
+  <footer>
+    <span>© <span id="year">2026</span> Dev4U Torch. All rights reserved.</span>
+    <span>ApplicationId (Android): <code>com.dev4u.torch</code></span>
+  </footer>
+</div>
+
+<button class="btn-top" id="topBtn" aria-label="Back to top">↑</button>
+
+<script>
+  // Dynamic footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Back-to-top button
+  var topBtn = document.getElementById('topBtn');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 320) { topBtn.classList.add('show'); }
+    else { topBtn.classList.remove('show'); }
+  });
+  topBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Close the TOC after choosing a section (small screens)
+  var tocLinks = document.querySelectorAll('nav.toc a');
+  for (var i = 0; i < tocLinks.length; i++) {
+    tocLinks[i].addEventListener('click', function () {
+      var d = this.closest('details'); if (d) { d.removeAttribute('open'); }
+    });
+  }
+</script>
+</body>
+</html>
